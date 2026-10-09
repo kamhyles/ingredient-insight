@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="alabasterGrey">#DADDD8</color>   <!-- background -->
+    <color name="teaGreen">#C7D59F</color>
+    <color name="yellowGreen">#B7CE63</color>
+    <color name="limeMoss">#8FB339</color>       <!-- main accent -->
+    <color name="ebony">#4B5842</color>          <!-- dark text / header -->
+
+</resources>

@@ -1,0 +1,24 @@
+# Android build output and machine-specific configuration
+**/build/
+**/.gradle/
+**/.idea/
+**/.externalNativeBuild/
+**/.cxx/
+**/captures/
+**/local.properties
+*.iml
+*.apk
+*.aab
+*.jks
+*.keystore
+
+# Operating system files and local tooling
+.DS_Store
+Thumbs.db
+.agents/
+.codex/
+.aws/
+.github/modernize/
+
+# Original course submission retained locally
+/Testing and Reflection.pdf

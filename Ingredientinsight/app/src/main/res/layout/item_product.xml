@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <!-- rating dot -->
+        <View
+            android:id="@+id/viewHealthIndicator"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/teaGreen"
+            android:layout_marginEnd="12dp" />
+
+        <!-- text -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- name + health rating (one on right) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textProductName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Product name"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/ebony" />
+
+                <!-- small label pill -->
+                <TextView
+                    android:id="@+id/textHealthBadge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:text=""
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                    android:background="@drawable/bg_health_badge" />
+            </LinearLayout>
+
+            <!-- label under name -->
+            <TextView
+                android:id="@+id/textHealthLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Less healthy"
+                android:textSize="13sp"
+                android:textColor="@color/ebony"
+                android:alpha="0.75"
+                android:layout_marginTop="4dp" />
+
+            <!-- date -->
+            <TextView
+                android:id="@+id/textScanDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scanned on 11/26/25"
+                android:textSize="12sp"
+                android:textColor="@color/ebony"
+                android:alpha="0.6"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
